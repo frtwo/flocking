@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "flocking - Home";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>flocking.</h1>
+            <hr>
+            <p>an event managing app.</p>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <p>click on Event or Invite above to start.</p>
+            }
+            else
+            {
+                <p>signup or login above.</p>
+            }
+        </div>
+    </div>
+</div>
+
